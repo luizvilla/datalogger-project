@@ -103,15 +103,22 @@ void config_update(char *_config_request)
 		logger.degree_offset = arg_uc;
 		ee_write_logger();
 		break;
+	case 23:// set vane pin
+		if(arg_uc>=0 && arg_uc<8)
+		{
+			logger.inPinVane = arg_uc;
+			ee_write_logger();
+		}
+		break;
 	case 30://Set AC Voltage pin
-		if(arg_uc>=0 && arg_uc<=8)
+		if(arg_uc>=0 && arg_uc<8)
 		{
 			logger.inPinV = arg_uc;
 			ee_write_logger();
 		}
 		break;
 	case 31:// set ac current pin
-		if(arg_uc>=0 && arg_uc<=8)
+		if(arg_uc>=0 && arg_uc<8)
 		{
 			logger.inPinI = arg_uc;
 			ee_write_logger();

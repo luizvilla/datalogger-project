@@ -13,12 +13,12 @@
 //#define DEBUG_MEASURE	/**< use to debug the measurement process*/
 
 // state definition for bit selection in config registers
-#define STATE_CONFIG	 	0	/**< State config constant definition */
-#define STATE_MEASURE		1	/**< State measure constant definition */
-#define STATE_TIMESTAMP		2	/**< State timestamp constant definition */
-#define STATE_OUTPUT		3	/**< State output constant definition */
-#define STATE_SLEEP			4	/**< State sleep constant definition */
-#define STATE_IDLE			5	/**< State idle constant definition */
+#define  STATE_CONFIG 0;	/**< State config constant definition */
+#define STATE_MEASURE 1;	/**< State measure constant definition */
+#define STATE_TIMESTAMP 2;	/**< State timestamp constant definition */
+#define  STATE_OUTPUT 3;	/**< State output constant definition */
+#define  STATE_SLEEP 4;	/**< State sleep constant definition */
+#define  STATE_IDLE 5;	/**< State idle constant definition */
 
 /**
  * function pointer array definition
